@@ -1,8 +1,10 @@
+import "./index.css"
+
 function App() {
   return (
-    <>
-      <h1>Weather</h1>
-    </>
+    <h1 className="text-3xl">
+      Hello World
+    </h1>
   )
 }
 
