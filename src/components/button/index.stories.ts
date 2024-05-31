@@ -1,21 +1,37 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Button } from '.';
+import type { Meta, StoryObj } from '@storybook/react'
+import { Button } from '.'
 
 const meta = {
   title: 'Components/Button',
   component: Button,
   parameters: {
-    layout: 'centered',
+    layout: 'centered'
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Button>;
+  argTypes: {
+    size: {
+      options: ['default', 'sm', 'xs'],
+      control: {
+        type: 'inline-radio'
+      }
+    },
+    colors: {
+      options: ['primary', 'secondary'],
+      control: {
+        type: 'inline-radio'
+      }
+    }
+  }
+} satisfies Meta<typeof Button>
 
-export default meta;
-type Story = StoryObj<typeof meta>;
+export default meta
+
+type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    primary: true,
-    label: 'Button',
-  },
-};
+    size: 'default',
+    colors: 'primary',
+    children: 'Click here'
+  }
+}
