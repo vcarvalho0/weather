@@ -11,7 +11,7 @@ const buttonStyles = tv({
     },
     colors: {
       primary: 'bg-blue-500 text-white',
-      secondary: 'bg-blue-600 text-white'
+              secondary: 'bg-blue-600 text-white'
     }
   }
 })
