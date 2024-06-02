@@ -7,13 +7,13 @@ const buttonStyles = tv({
     size: {
       default: 'h-10 px-4',
       sm: 'h-8 px-3',
-      xs: 'h-6 px-2 text-xs'
+      xs: 'h-6 px-2 text-xs',
     },
     colors: {
       primary: 'bg-blue-500 text-white',
-              secondary: 'bg-blue-600 text-white'
-    }
-  }
+      secondary: 'bg-blue-600 text-white',
+    },
+  },
 })
 
 export type ButtonProps = ComponentProps<'button'> &

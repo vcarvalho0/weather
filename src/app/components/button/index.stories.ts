@@ -5,23 +5,23 @@ const meta = {
   title: 'Components/Button',
   component: Button,
   parameters: {
-    layout: 'centered'
+    layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {
     size: {
       options: ['default', 'sm', 'xs'],
       control: {
-        type: 'inline-radio'
-      }
+        type: 'inline-radio',
+      },
     },
     colors: {
       options: ['primary', 'secondary'],
       control: {
-        type: 'inline-radio'
-      }
-    }
-  }
+        type: 'inline-radio',
+      },
+    },
+  },
 } satisfies Meta<typeof Button>
 
 export default meta
@@ -32,6 +32,6 @@ export const Primary: Story = {
   args: {
     size: 'default',
     colors: 'primary',
-    children: 'Click here'
-  }
+    children: 'Click here',
+  },
 }
