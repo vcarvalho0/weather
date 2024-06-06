@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 const commonClass = 'text-lg transition-opacity hover:opacity-70 border-b-2'
@@ -13,6 +14,9 @@ export const Header = () => {
   return (
     <header className="item-center container mx-auto flex justify-between px-4 py-8">
       <nav className="flex gap-6">
+        <Link href="/">
+          <Image src={''} alt="" />
+        </Link>
         <Link
           className={pathname === '/' ? activateLinkClass : linkClass}
           href="/"
@@ -20,10 +24,10 @@ export const Header = () => {
           Home
         </Link>
         <Link
-          className={pathname === '/' ? activateLinkClass : linkClass}
-          href="/"
+          className={pathname === '/weather' ? activateLinkClass : linkClass}
+          href="/weather"
         >
-          Home
+          Weather
         </Link>
       </nav>
     </header>
