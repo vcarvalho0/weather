@@ -1,6 +1,12 @@
 import type { Metadata } from 'next'
 import { Header } from '@/components/Header'
+import { Inter } from 'next/font/google'
 import './globals.css'
+
+const inter = Inter({
+  weight: '300',
+  subsets: ['latin'],
+})
 
 export const metadata: Metadata = {
   title: 'Check Weather',
@@ -14,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="font-sans">
+      <body className={`${inter.className}`}>
         <div className="bg-layout">
           <div className="z-[1] flex flex-grow flex-col">
             <Header />
