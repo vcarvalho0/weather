@@ -16,8 +16,9 @@ type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    weatherIcon: '/api/something',
-    day: 'Segunda-feira',
+    weatherIcon: 'https://cdn.weatherapi.com/weather/64x64/day/116.png',
+    country: 'Brazil',
+    city: 'São Paulo',
     minTemperature: 14,
     maxTemperature: 24,
   },
