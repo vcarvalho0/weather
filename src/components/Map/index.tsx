@@ -28,7 +28,7 @@ const MarkerPosition = () => {
     <>
       {position && (
         <Marker position={position}>
-          <Popup>{String(position)}</Popup>
+          <Popup>{position.toString()}</Popup>
         </Marker>
       )}
     </>
